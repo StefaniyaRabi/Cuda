@@ -1,13 +1,16 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
 body {
     font-family: "Titillium Web", sans-serif;
     text-align: center;
 }
 .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     max-width: 1100px;
     margin: 0 auto;
-    position: relative;
 }
 
 .main-header {
@@ -82,17 +85,31 @@ body {
     line-height: 1.5;
 }
 
-.Services {
+.services {
     width: 100%;
     background-color: #17c2a4;
     padding-top: 118px;
 }
 
-.Services p {
+.services h2 {
+    padding-bottom: 14px;
+}
+
+.line{
+    width: 87px;
+    height: 4px;
+    margin: 0 auto;
+}
+
+.service-line{
+    border-bottom: 4px solid #14a58c;
+}
+
+.services p {
     margin-bottom: 79px;
 }
 
-.Service-list {
+.service-list {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -103,7 +120,7 @@ body {
     width: 50%;
   }
 
-  .Service-list h3 {
+  .service-list h3 {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
@@ -114,7 +131,7 @@ body {
     
   }
 
-  .Service-list p {
+  .service-list p {
     font-size: 16px;
     font-weight: 300;
     color: #fff;
@@ -135,12 +152,17 @@ body {
 
 .team h2 {
     color: #3c4761;
+    padding-bottom: 14px;
+}
+
+.team-line{
+    border-bottom: 4px solid #c8d9e5;
 }
 
 .team p {
     color: #808b9d;
     font-size: 18px;
-    margin-top: 51px;
+    margin-top: 18px;
     padding-bottom: 79px;
 }
 
@@ -202,12 +224,17 @@ body {
 
 .skills h2 {
     color: #3c4761;
+    padding-bottom: 14px;
+}
+
+.skills-line{
+    border-bottom: 4px solid #dfe8ed;
 }
 
 .skills p {
     color: #808b9d;
     font-size: 18px;
-    margin-top: 51px;
+    margin-top: 20px;
     padding-bottom: 67px;
 }
 
@@ -231,18 +258,23 @@ body {
 
 .portfolio {
     background-color: #ffdd99;
-    padding-top: 120px;
-    padding-bottom: 109px;
+    padding: 120px 15px 109px 15px;
+
 }
 
 .portfolio h2 {
     color: #393939;
+    padding-bottom: 14px;
+}
+
+.portfolio-line{
+    border-bottom: 4px solid #e5c37f;
 }
 
 .portfolio p {
     color: #393939;
     font-size: 18px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 0;
     padding-bottom: 43px;
 }
@@ -273,10 +305,26 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 25px;
+
+}
+
+/* .portfolio-item{
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+.portfolio-item__pic {
+    /* max-width: 100%;
+    max-height: 100%; */
+    margin-top: 50px;
+    width: 540px;
+    height: 311px;
 }
 
 .portfolio-item__img {
-    margin-top: 50px;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -285,21 +333,33 @@ body {
     text-transform: uppercase;
     padding: 0;
     margin-top: 32px;
-    margin-bottom: 84px;
+    margin-bottom: 0;
 }
 
-.portfolio_button {
+.portfolio_button{
+    margin-top: 110px;
+}
+
+.portfolio_button a {
     background: #17c2a4;
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
     box-shadow: 0px 5px 1px rgba(20, 165, 140);
-    padding: 20px 74px;
+    padding: 20px 50px;
 }
 
 .reviews {
     background-color: #d74680;
-    padding: 119px 0 127px;
+    padding: 90px 0 127px;
+}
+
+.reviews h2 {
+    padding-bottom: 14px;
+}
+
+.reviews-line{
+    border-bottom: 4px solid #b73c6d;
 }
 
 .reviews p{
@@ -316,7 +376,7 @@ body {
     max-width: 1300px;
     width: 50%;
     position: relative;
-    padding: 10px 65px 10px 150px;
+    padding: 10px 48px 10px 180px;
     text-align: left;
 }
 
@@ -325,7 +385,7 @@ body {
     height: 97px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 40px;
     z-index: 1;
 }
 
@@ -364,14 +424,14 @@ body {
 }
 
 .contacts h2 {
-    padding-bottom: 48px;
+    padding-bottom: 14px;
 }
 
-form {
-    color: #fff;
+.contacts-line{
+    border-bottom: 4px solid #273a71;
 }
 
-.send_contact {
+::placeholder {
     color: #fff;
 }
 
@@ -382,10 +442,13 @@ form {
     border-radius: 5px;
     color: #fff;
     font-size: 18px;
-    width: 414px;
+    width: 418px;
     height: 56px;
-    margin: 77px 16px 27px 16px;
+    margin: 77px 10px 27px 10px;
+    padding: 0 15px;
 }
+
+
 
 .send textarea {
     background: #273a71;
@@ -396,6 +459,8 @@ form {
     font-size: 18px;
     width: 860px;
     height: 200px;
+    padding-top: 18px;
+    padding: 18px 15px 20px 15px;
 }
 
 .send input[type="submit"] {
@@ -430,6 +495,15 @@ form {
     color: #30bae7;
     text-decoration: none;
  }
- 
+
+ @media (max-width: 1130px) {
+    
+}
+
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+@media (max-width: 576px) {}
 
 
