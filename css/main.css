@@ -111,14 +111,12 @@ body {
 
 .service-list {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
     height: 100%;
   }
 
-  .service-item {
+  /* .service-item {
     width: 50%;
-  }
+  } */
 
   .service-list h3 {
     font-size: 24px;
@@ -139,7 +137,7 @@ body {
     margin-bottom: 129px;
   }
 
-  .img h3 {
+  .service-item h3 {
     margin: 55px 0 0 0;
   }
 
@@ -172,6 +170,11 @@ body {
 
 .team-item__img {
     padding-bottom: 42px;
+}
+
+.team-item__img img{
+    width: 200px;
+    height: 200px;
 }
 
 .team-item__title {
@@ -306,7 +309,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 25px;
-
 }
 
 /* .portfolio-item{
@@ -318,14 +320,12 @@ body {
     /* max-width: 100%;
     max-height: 100%; */
     margin-top: 50px;
-    width: 540px;
-    height: 311px;
 }
 
-.portfolio-item__img {
+/* .portfolio-item__img {
     width: 100%;
     height: auto;
-}
+} */
 
 
 .portfolio-item__text p {
@@ -496,14 +496,51 @@ body {
     text-decoration: none;
  }
 
- @media (max-width: 1130px) {
-    
+@media (max-width: 1130px) {
+    .team-item__img img{
+        width: 180px;
+        height: 180px;
+    }
+    .portfolio-list{
+        justify-content: space-evenly;
+        margin-top: 25px;
+    }
+    .portfolio-item__img {
+        width: 450px;
+        height: auto;
+    }
 }
-
-
-@media (max-width: 992px) {}
-
-@media (max-width: 768px) {}
-@media (max-width: 576px) {}
-
+@media (max-width: 992px) {
+    .button {
+        background: #eb7d4b;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        box-shadow: 0px 5px 1px rgba(200, 106, 64);
+        padding: 20px 75px;
+    }
+    /* .service-item img{
+        width: 20%;
+    } */
+    .service-item__img-Flag{
+        width: 100px;
+        height: 103px;
+    }
+    .service-item__img-Crayon{
+        width: 69px;
+        height: 112px;
+    }
+    .service-item__img-Gears{
+        width: 139px;
+        height: 107px;
+    }
+    .service-item__img-Rocket{
+        width: 77px;
+        height: 115px;
+    }
+    .team-item__img img{
+        width: 150px;
+        height: 150px;
+    }
+}
 
